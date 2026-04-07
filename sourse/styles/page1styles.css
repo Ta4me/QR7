@@ -1,0 +1,183 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nothing+You+Could+Do&family=Pixelify+Sans:wght@400..700&family=Shadows+Into+Light&display=swap');    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; }
+#no {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=4ba7cc&c2=d70336&gt=l&gd=dtt
+*/
+background: #4BA7CC;
+background: linear-gradient(0deg, #4BA7CC, #D70336);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    perspective: 1000px;
+}
+
+section::before{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50% ;
+    transform: translate(-150px,-100px);
+    background: rgba(21, 152, 170, 1.0);
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=d81cb4&c2=8a8aa3&gt=l&gd=dtl
+*/
+background: #D81CB4;
+background: linear-gradient(315deg, #D81CB4, #8A8AA3);
+}
+section::after{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50% ;
+    transform: translate(150px,100px);
+    background: rgba(21, 152, 170, 1.0);
+
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=d81cb4&c2=8a8aa3&gt=l&gd=dbr
+*/
+background: #D81CB4;
+background: linear-gradient(135deg, #D81CB4, #8A8AA3);
+}
+.container  {
+    position: relative;
+    height: 225px;
+    width: 375px;
+    z-index: 100;
+    transition: 1s;
+    transform-style: preserve-3d;
+
+}
+.container.container:active{
+    transform: rotateY(180deg);
+    
+}
+.container .card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    border-radius: 25px;
+    backdrop-filter: blur(25px);
+    background: rgba(255, 255,255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255,255, 0.1);
+    backface-visibility: hidden;
+}
+.front-face header,
+.front-face .logo {
+    display: flex;
+    align-items: center;
+}
+.front-face header{
+    justify-content: space-between;
+}
+.front-face .logo img{
+    width: 48px;
+    margin-right: 10px;
+
+}
+h5{
+    font-size: 16px;
+    font-weight: 400;
+}
+.front-face .chip{
+    width: 50px;
+}
+.front-face .card-details{
+    display: flex;
+    margin-top: 40px;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+h6{
+    font-size: 10px;
+    font-weight: 400;
+}
+h5.number {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+h5.name{
+    margin-top: 30px;
+    margin-left: 65px;
+    font-size: 40px;
+    
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.card.back-face{
+    border: none;
+    padding: 15px 25px 25px 25px;
+    transform: rotateY(180deg);
+}
+.card.back-face h6{
+    font-size:8px;
+}
+.card.back-face .magnetic-strip{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 45px;
+    width: 100%;
+    background-color:#000;
+}
+.card.back-face .signature {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 80px;
+    height: 40px;
+    width: 85%;
+    border-radius: 6px;
+    background: repeating-linear-gradient(
+        #fff, #fff 3px, #efefef 0px, #efefef 9px);
+}
+.signature   i{
+    color: #000;
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-right:-30px;
+    z-index: -1;
+}
+.card.back-face h5{
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 5px;
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+
+    
+}

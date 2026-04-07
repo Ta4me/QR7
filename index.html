@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sourse\styles\page1styles.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+ 
+    
+</head>
+<body>
+    <section>
+        <div data-sound="sourse\images\button-digital-whistling-close.mp3" class="loud-link-hover">
+        <div class="container">
+		   
+		   	<a href="#"></a>
+			
+		   	<audio id="beep" preload="auto">
+				<source src="sourse\styles\beep.mp3"></source>
+			</audio>
+			
+			
+		  
+	
+            <div class="card front-face">
+                <header>
+                    <span class="logo">
+                        
+                        <h5></h5>
+                    </span>
+                    
+                </header>
+                <div class="card-details">
+                    <div class="name-number">
+                        <h6></h6>
+                        <h5 class="number"></h5>
+                        <h5 class="name" id ="no">JUST OPEN</h5>
+                    </div>
+                    <div class="valid-date"></div>
+                        <h6></h6>
+                        <h5></h5>
+                </div>
+            </div>
+            <div class="card back-face">
+                <h6></h6>
+                
+                
+                <h5 id="no">«Делай что можешь, с тем что имеешь, там где находишься».</h5>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script>
+		
+		var beepOne = $("#beep")[0];
+		$(".container")
+	.mousedown(function() {
+		beepOne.play();
+	});
+	
+	</script>
+    
+    
+</body>
+</html>
